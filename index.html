@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+
+
+
+      <button id="startButton" onclick="showPopup()">Start</button>
+
+    <div id="overlay">
+        <div id="popup">
+            <p>15 questions are provided.
+              30 minutes time.
+              Answer the maximum questions possible.</p>
+            <button id="continueButton" onclick="redirect()">Continue</button>
+        </div>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('startButton').style.display = 'none';
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function redirect() {
+            // Change the URL to the desired Google Form URL
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc-GTFk7OcP6DFJbH5qkW0BDjZ_jExfoG2dmz1i65vByxLNew/viewform?usp=sf_link";
+        }
+    </script>
+  
+
+
+
+    </body>
+</html>
